@@ -28,7 +28,8 @@ class Post extends Component {
          api.post("/upload", data, { 
            params:{body}
           }).then(response => {
-              console.log("sucesso");
+            this.props.history.push("/app");  
+            console.log("sucesso");
           }).catch(response => {
             console.log("------",response);
           })
@@ -38,12 +39,9 @@ class Post extends Component {
   render() {
      return ( 
         <div className="Post">
-
-
             <input type="file" name="file" onChange={this.onChangeHandler}/>
             <input type="text" name="body" onChange={e => this.setState({ body: e.target.value })} />
             <button type="button" class="btn btn-success btn-block" onClick={this.onClickHandler}>Postar</button>
-
             <Link to="/app">Voltar</Link>
         </div>
      )}

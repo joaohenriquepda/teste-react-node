@@ -41,7 +41,7 @@ class Timeline extends Component {
     return (
       <div className="Timeline">
         <Link to="/profile">Profile</Link>
-        <Link to="/postagem">Postagem</Link>
+        <Link to="/post">Postagem</Link>
         {posts}       
       </div>
     );

@@ -10,9 +10,6 @@ class UserController {
       }
 
     async create ({ request, response, view }) {
-        console.log("++++++++++++=");
-        
-
         const data = request.only(["username", "email", "password"])
         const user = await User.create(data)
         return user

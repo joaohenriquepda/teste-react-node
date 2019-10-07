@@ -17,6 +17,9 @@
 const Route = use('Route')
 
 Route.get('/users', 'UserController.index');
+Route.put('/users', 'UserController.update');
 Route.post('/users', 'UserController.create');
-Route.get('/users/profile', 'UserController.profile');
 Route.post('/sessions', 'SessionController.create');
+Route.post('/upload', 'PostController.create');
+Route.get('/posts', 'PostController.index');
+Route.get('/users/profile', 'UserController.profile');
