@@ -19,6 +19,7 @@ class Login extends Component {
     if (!email || !password) {
       this.setState({ error: "Preencha com as informações para continuar!" });
     } else {
+        console.log("-------");
       try {
         const response = await api.post("/sessions", { email, password });
         console.log("-------",response);

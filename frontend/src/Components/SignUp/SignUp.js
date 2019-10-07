@@ -14,6 +14,7 @@ class SignUp extends Component {
   };
 
   handleSignUp = async e => {
+   
     e.preventDefault();
     const { username, email, password } = this.state;
     if (!username || !email || !password) {
@@ -50,7 +51,7 @@ class SignUp extends Component {
             placeholder="Senha"
             onChange={e => this.setState({ password: e.target.value })}
           />
-          <button type="submit">Registrar</button>
+          <button type="submit" onClick={this.handleSignUp}>Registrar</button>
           <hr />
           <Link to="/">Fazer login</Link>
         </Form>

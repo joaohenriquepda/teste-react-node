@@ -1,22 +1,65 @@
 .App {
-  text-align: center;
+  padding-top: 60px;
+  flex-grow: 1;
+  margin: 0 auto;
+  max-width: 600px;
+  position: relative;
+  width: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
+.Photo {
+  border-radius: 3px;
+  border: 1px solid #e6e6e6;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Photo .Profile {
+  border-bottom: 1px solid #efefef;
+  height: 20px;
+  padding: 16px;
+  flex-direction: row;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #09d3ac;
+.Photo .Profile-photo {
+  align-self: center;
 }
+
+.Photo .Profile-photo-canvas {
+  transform: translate(-5px, -5px);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 40px;
+  height: 40px;
+}
+
+.Photo .Profile-photo-container {
+  width: 30px;
+  height: 30px;
+  background-color: #fafafa;
+  border-radius: 50%;
+  display: block;
+  flex: 0 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.Photo .Profile-name {
+  margin-left: 12px;
+  color: #262626;
+  font-weight: 600;
+  padding-left: 5px;
+  margin-left: 7px;
+}
+
+.Photo .Profile-name a {
+  text-decoration: none;
+  color: #262626;
+  font-size: 14px;
+}
+
+.Photo .Picture-Container img {
+  height: auto;
+  width: 100%;
+}
+/*# sourceMappingURL=App.css.map */
