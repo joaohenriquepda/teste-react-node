@@ -15,7 +15,7 @@ services:
     build:
       context: .
       dockerfile: ./Dockerfile
-    command: bash -c "cd frontend && yarn start"
+    command: bash -c "cd frontend &&  npm inzstall && yarn start"
     volumes:
          - .:/app
     environment:
